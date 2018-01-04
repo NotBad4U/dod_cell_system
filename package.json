@@ -1,0 +1,19 @@
+{
+  "name": "dod_cell_system",
+  "version": "1.0.0",
+  "description": "High performant entity system in Javascript via Data-Oriented Design",
+  "main": "cell_system.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nooptim": "time node cell_system.js",
+    "optim": "time node cell_system_optimised.js"
+  },
+  "keywords": [
+    "Data-oriented",
+    "design",
+    "DOD",
+    "ECS"
+  ],
+  "author": "Alessio Coltellacci <lightplay8@gmail.com>",
+  "license": "ISC"
+}
