@@ -8,14 +8,10 @@ Here are the result on my `Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz`.
 I use a `node 9.3.0` version.
 The benchmark run with `1 000 000` of cells and `1000` update on them.
 
-| Time spend in | None optimised version | Optimised version |
-| ------------- | ------------------------ | --------------------|
-| user          | 31.08s                   | 4.98s               |
-| system        | 0.11s                    | 0.00s               |
+![](./chart_result.png)
 
-
-* `isolate-0x55f480c91ef0-v8.log` = profile of none optimised version
-* `isolate-0x5597250bfef0-v8.log` = profile of optimised version
+* [isolate-0x55f480c91ef0-v8.log][nopti] = profile of none optimised version
+* [isolate-0x5597250bfef0-v8.log][opti] = profile of optimised version
 
 ## Execution time
 
@@ -42,3 +38,6 @@ Measure the cache hit/miss and cpu time of the program
 `perf stat cell_system.js`
 
 `perf stat -e cache_misses, L1-dcache-load-misses cell_system.js`
+
+[nopti]: ./isolate-0x55f480c91ef0-v8.log
+[opti]: ./isolate-0x5597250bfef0-v8.log
